@@ -23,13 +23,14 @@ timezone:
 
 title: TimerMachine                          # the main title
 
-tagline: A text-focused Jekyll theme   # it will display as the sub-title
+tagline: The most powerful web timer in the world punk - probably.   # it will display as the sub-title
 
 description: >-                        # used by seo meta and the atom feed
-  A minimal, responsive, and powerful Jekyll theme for presenting professional writing.
+  A web and mobile timer that plays music, speaks alerts; text to voice; intervals for meditation, productivity, training, anything.
 
 # fill in the protocol & hostname for your site, e.g., 'https://username.github.io'
-url: 'https://timermachine.github.io'
+# url: 'https://timermachine.github.io'
+url: 'https://timermachine.com'
 
 github:
   username: timermachine            # change to your github username
