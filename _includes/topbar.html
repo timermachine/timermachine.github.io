@@ -4,13 +4,15 @@
 
 <div id="topbar-wrapper">
   <div id="topbar" class="container d-flex align-items-center justify-content-between h-100 pl-3 pr-3 pl-md-4 pr-md-4">
+   
+   
     <span id="breadcrumb">
-
+    
     {% assign paths = page.url | split: '/' %}
 
     {% if paths.size == 0 or page.layout == 'home' %}
       <!-- index page -->
-      <span>{{ site.data.locales[lang].tabs.home | capitalize }}</span>
+      <span>{% include sitetitle.html %}</span>
 
     {% else %}
 
@@ -19,7 +21,7 @@
         {% if forloop.first %}
           <span>
             <a href="{{ '/' | relative_url }}">
-              {{ site.data.locales[lang].tabs.home | capitalize }}
+              {% include sitetitle.html %}
             </a>
           </span>
 
@@ -46,6 +48,7 @@
     </span><!-- endof #breadcrumb -->
 
     <i id="sidebar-trigger" class="fas fa-bars fa-fw"></i>
+
 
     <div id="topbar-title">
       {% if page.layout == 'home' %}
