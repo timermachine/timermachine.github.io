@@ -1,7 +1,4 @@
----
-layout: post
-title:  "How to Use"
----
+_tabs_/home.md
 
 - Plays your choice of muisc- at start and/or end of timer.
 - Text to Voice.
@@ -30,7 +27,7 @@ Uncheck the 'alarm sound'. -on all options there is a checkbox which enables/dis
 
 Check the 'alarm Speak' box. Enter whatever text you like. Run it.
 
-### Music Playing Timer!!!
+### Music Playing Timer!
 
 We think this is the most awesome feature so far.
 With it you can listen to music videos from Youtube.
