@@ -29,7 +29,14 @@ description: >-                        # used by seo meta and the atom feed
   A web and mobile timer that plays music, speaks alerts; text to voice; intervals for meditation, productivity, training, anything.
 
 # fill in the protocol & hostname for your site, e.g., 'https://username.github.io'
-# url: 'https://timermachine.github.io'
+# url: 'https://timermachine.github.io' √ i think
+# url: '' (blank) √ after a while (hour). deploy GA - same issue. DNS?
+# url: 'http://timermachine.com' # ?
+# url: 'http://www.timermachine.com' # ?
+# url: 'https://timermachine.com' # havent tried
+# url: 'https://www.timermachine.com' # havent tried
+
+
 url: ''
 
 github:
