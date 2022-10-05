@@ -17,6 +17,8 @@ In a few minutes you will unleash the power of TimerMachine...
 
 I got frustrated by all the online timers out there not working properly, and not having great features - so I made my own: Timer Machine!
 
+
+
 Lets dive in!
 
 ### Simplest Timer:
@@ -83,8 +85,6 @@ Bonus: Works great with playlists at start and end.
 
 Just start a timer without any countdown time set. 
 
-### nudge
-nudge
 
 
 
