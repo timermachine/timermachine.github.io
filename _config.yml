@@ -37,7 +37,7 @@ description: >-                        # used by seo meta and the atom feed
 # url: 'https://www.timermachine.com' # havent tried
 
 
-url: ''
+url: 'https://www.timermachine.com'
 
 github:
   username: timermachine            # change to your github username
