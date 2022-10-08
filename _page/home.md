@@ -1,4 +1,5 @@
-_tabs_/home.md
+---
+---
 
 - Plays your choice of muisc- at start and/or end of timer.
 - Text to Voice.

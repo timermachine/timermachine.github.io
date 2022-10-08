@@ -5,19 +5,7 @@ title:  "Quick-start"
 In a few minutes you will unleash the power of TimerMachine...
 
 
-### Features:
-
-- Plays your choice of muisc- at start and/or end of timer.
-- Text to Voice.
-- Timer Intervals.
-- Save Multiple Timers.
-- You dont have to stay on the timer browser tab for it to work (unlike a lot of others).
-- Overtimer (see how long since timer ended)
-- Stopwatch: just start a timer with no time set.
-
 I got frustrated by all the online timers out there not working properly, and not having great features - so I made my own: Timer Machine!
-
-
 
 Lets dive in!
 
