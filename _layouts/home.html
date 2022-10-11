@@ -4,62 +4,59 @@ layout: page
 ---
 
 {% include lang.html %}
+<div id="yt-player"></div>
+<div id="main-timer-app" class="timer-app">main timer app</div>
 
-{% include timerapp.html %}
+<div
+  id="single-timer-app"
+  class="timer-app"
+  timer='{"timer":{"name":"i am a fucking genius today!!"}}'
+>
+  single timer app
+</div>
+
 <h2 id="features">
-  <span class="mr-2">Features:</span><a href="#features" class="anchor text-muted"><i class="fas fa-hashtag"></i></a>
-  </h2>
+  <span class="mr-2">Features:</span
+  ><a href="#features" class="anchor text-muted"
+    ><i class="fas fa-hashtag"></i
+  ></a>
+</h2>
 <ul>
-  <li>Timer can play music from youtube. </li>
+  <li>Timer can play music from youtube.</li>
   <li>Text to Voice alerts.</li>
   <li>Timer Intervals.</li>
   <li>Save Multiple Timers.</li>
-  <li>You dont have to stay on the timer browser tab for it to work (unlike a lot of others).</li>
+  <li>
+    You dont have to stay on the timer browser tab for it to work (unlike a lot
+    of others).
+  </li>
   <li>Overtimer (see how long since timer ended)</li>
   <li>Stopwatch: just start a timer with no time set.</li>
 </ul>
 
-{{ content }}
-
-{% assign pinned = site.posts | where: "pin", "true" %}
-{% assign default = site.posts | where_exp: "item", "item.pin != true and item.hidden != true" %}
-
-{% assign posts = "" | split: "" %}
+{{ content }} {% assign pinned = site.posts | where: "pin", "true" %} {% assign
+default = site.posts | where_exp: "item", "item.pin != true and item.hidden !=
+true" %} {% assign posts = "" | split: "" %}
 
 <!-- Get pinned posts -->
 
-{% assign offset = paginator.page | minus: 1 | times: paginator.per_page %}
-{% assign pinned_num = pinned.size | minus: offset %}
-
-{% if pinned_num > 0 %}
-  {% for i in (offset..pinned.size) limit: pinned_num %}
-    {% assign posts = posts | push: pinned[i] %}
-  {% endfor %}
-{% else %}
-  {% assign pinned_num = 0 %}
-{% endif %}
+{% assign offset = paginator.page | minus: 1 | times: paginator.per_page %} {%
+assign pinned_num = pinned.size | minus: offset %} {% if pinned_num > 0 %} {%
+for i in (offset..pinned.size) limit: pinned_num %} {% assign posts = posts |
+push: pinned[i] %} {% endfor %} {% else %} {% assign pinned_num = 0 %} {% endif
+%}
 
 <!-- Get default posts -->
 
-{% assign default_beg = offset | minus: pinned.size %}
-
-{% if default_beg < 0 %}
-  {% assign default_beg = 0 %}
-{% endif %}
-
-{% assign default_num = paginator.posts | size | minus: pinned_num  %}
-{% assign default_end = default_beg | plus: default_num | minus: 1 %}
-
-{% if default_num > 0 %}
-  {% for i in (default_beg..default_end) %}
-    {% assign posts = posts | push: default[i] %}
-  {% endfor %}
-{% endif %}
-
+{% assign default_beg = offset | minus: pinned.size %} {% if default_beg < 0 %}
+{% assign default_beg = 0 %} {% endif %} {% assign default_num = paginator.posts
+| size | minus: pinned_num %} {% assign default_end = default_beg | plus:
+default_num | minus: 1 %} {% if default_num > 0 %} {% for i in
+(default_beg..default_end) %} {% assign posts = posts | push: default[i] %} {%
+endfor %} {% endif %}
 
 <div id="post-list">
-
-{% for post in posts %}
+  {% for post in posts %}
 
   <div class="post-preview">
     <h1>
@@ -68,29 +65,25 @@ layout: page
 
     <div class="post-content">
       <p>
-        {% include no-linenos.html content=post.content %}
-        {{ content | markdownify | strip_html | truncate: 200 | escape }}
+        {% include no-linenos.html content=post.content %} {{ content |
+        markdownify | strip_html | truncate: 200 | escape }}
       </p>
     </div>
 
     <div class="post-meta text-muted d-flex">
       <div class="mr-auto">
-
         <!-- posted date -->
         <i class="far fa-calendar fa-fw"></i>
         {% include datetime.html date=post.date %}
 
         <!-- categories -->
         {% if post.categories.size > 0 %}
-          <i class="far fa-folder-open fa-fw"></i>
-          <span>
-          {% for category in post.categories %}
-            {{ category }}
-            {%- unless forloop.last -%},{%- endunless -%}
-          {% endfor %}
-          </span>
+        <i class="far fa-folder-open fa-fw"></i>
+        <span>
+          {% for category in post.categories %} {{ category }} {%- unless
+          forloop.last -%},{%- endunless -%} {% endfor %}
+        </span>
         {% endif %}
-
       </div>
 
       {% if post.pin %}
@@ -99,15 +92,14 @@ layout: page
         <span>{{ site.data.locales[lang].post.pin_prompt }}</span>
       </div>
       {% endif %}
+    </div>
+    <!-- .post-meta -->
+  </div>
+  <!-- .post-review -->
 
-    </div> <!-- .post-meta -->
+  {% endfor %}
+</div>
+<!-- #post-list -->
 
-  </div> <!-- .post-review -->
-
-{% endfor %}
-
-</div> <!-- #post-list -->
-
-{% if paginator.total_pages > 0 %}
-  {% include post-paginator.html %}
-{% endif %}
+{% if paginator.total_pages > 0 %} {% include post-paginator.html %} {% endif %}
+{% include timerapp.html %}
