@@ -1,0 +1,3 @@
+User-agent: * 
+Disallow: 
+Sitemap: https://timermachine.com/sitemap.xml
