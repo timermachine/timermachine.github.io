@@ -4,7 +4,7 @@ layout: page
 ---
 
 {% include lang.html %}
-<div id="yt-player"></div>
+
 <div id="main-timer-app" class="timer-app">main timer app</div>
 
 <div
@@ -100,6 +100,6 @@ endfor %} {% endif %}
   {% endfor %}
 </div>
 <!-- #post-list -->
-
+<div id="yt-player"></div>
 {% if paginator.total_pages > 0 %} {% include post-paginator.html %} {% endif %}
 {% include timerapp.html %}
