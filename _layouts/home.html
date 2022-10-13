@@ -4,10 +4,12 @@ layout: page
 ---
 
 {% include lang.html %}
-<h2>Your Timer Library</h2>
+<h1>Your Timer Library</h1>
 
 <div class="timer-app">main timer app</div>
 
+<h2 id="welcom">Welcome to Timing as you never experienced before.</h2>
+Get up and running in two minutes with our interactive  <a href="/guide">fast start guide</a>.
 
 
 <h2 id="features">
@@ -17,17 +19,21 @@ layout: page
   ></a>
 </h2>
 <ul>
-  <li>Timer can play music from youtube.</li>
+  <li>Timer can play pretty much any music for free and Ad Free!</li>
   <li>Text to Voice alerts.</li>
+  <li>Mobile and desktop.</li>
   <li>Timer Intervals.</li>
   <li>Save Multiple Timers.</li>
   <li>
-    You dont have to stay on the timer browser tab for it to work (unlike a lot
-    of others).
+    You dont have to stay on the timer browser tab for it to work (unlike ahem some others).
   </li>
-  <li>Overtimer (see how long since timer ended)</li>
+  <li>Overtimer (see how long since timer ended).</li>
   <li>Stopwatch: just start a timer with no time set.</li>
+  <li>Bookmark/Share timers.</li>
+  <li>Basicly this is the timer to kill all other timers.</li>
+  <li>Even more insanely powerful features a comming...</li>
 </ul>
+
 
 {{ content }} {% assign pinned = site.posts | where: "pin", "true" %} {% assign
 default = site.posts | where_exp: "item", "item.pin != true and item.hidden !=
