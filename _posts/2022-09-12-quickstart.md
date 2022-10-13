@@ -15,6 +15,8 @@ The default Tim/any new timer is created with the default alarm sound.
 2. Start it.
 3. When its done click the pause button. 
 4. An Edit button should show (bottom right, hover over buttons for tool tips). Click Edit button.
+Try it:
+
 
 
 ### Speak Text Timer:
