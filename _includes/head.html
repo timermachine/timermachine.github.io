@@ -11,9 +11,6 @@
     <meta name="prefer-datetime-locale" content="{{ site.prefer_datetime_locale }}">
   {% endif %}
 
- 
-  <link rel="stylesheet" href="/assets/css/timer.css">
-
 
 
   {% if page.layout == 'home' or page.layout == 'post' %}
@@ -93,6 +90,11 @@
       <link rel="dns-prefetch" href="{{ proxy_url }}">
     {% endif %}
   {% endif %}
+
+
+
+
+  <link rel="stylesheet" href="{{ '/assets/css/timer.css' | relative_url }}">
 
   <!-- Bootstrap -->
   <link rel="stylesheet" href="{{ site.data.assets[origin].bootstrap.css | relative_url}}">
