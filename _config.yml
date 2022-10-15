@@ -21,12 +21,12 @@ timezone:
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
 
-title: TimerMachine # the main title
+title: Online Timer that does it all plays music, videos, speaks,customisable, easy to use. 
 
-tagline: The most powerful web timer in the world punk - probably. # it will display as the sub-title
+tagline: Modern 2022 Online countdown Timer and stopwatch thats customisable with voice, music, youtube, alarms. For productivity, Time focus, realxation, meditation.
 
 description: >- # used by seo meta and the atom feed
-  A web and mobile timer that plays music, speaks alerts; text to voice; intervals for meditation, productivity, training, anything.
+   Online new 2022 Time tools and Video player. Web and Mobile timer that plays your choice of music, speaks alerts; text to voice, intervals for meditation, productivity, training. Countdown timer, Stopwatch, Time, Clock, Pomodoro, Insight timer.
 
 # fill in the protocol & hostname for your site, e.g., 'https://username.github.io'
 # url: 'https://timermachine.github.io' √ i think
