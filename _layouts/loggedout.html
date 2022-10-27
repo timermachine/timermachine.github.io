@@ -1,0 +1,23 @@
+---
+layout: page
+# loggedout layout
+---
+
+{% include lang.html %}
+
+<h2 id="features">
+  <span class="mr-2">Successfully Logged out</span>
+</h2>
+
+
+
+
+
+{{ content | markdownify }}
+
+<div id="yt-player"></div>
+{% if paginator.total_pages > 0 %} {% include post-paginator.html %} {% endif %}
+{% include timerapp.html %}
+
+
+
