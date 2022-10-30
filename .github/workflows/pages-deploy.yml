@@ -1,4 +1,4 @@
-name: "Build and deploy"
+name: 'Build and deploy'
 on:
   push:
     branches:
@@ -8,7 +8,7 @@ on:
       - .gitignore
       - README.md
       - LICENSE
-  
+
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
@@ -19,7 +19,7 @@ permissions:
 
 # Allow one concurrent deployment
 concurrency:
-  group: "pages"
+  group: 'pages'
   cancel-in-progress: true
 
 jobs:
@@ -48,19 +48,22 @@ jobs:
       - name: Build site
         run: bundle exec jekyll b -d "_site${{ steps.pages.outputs.base_path }}"
         env:
-          JEKYLL_ENV: "production"
+          JEKYLL_ENV: 'production'
 
       - name: Test site
         run: |
           bundle exec htmlproofer _site --disable-external --check-html --allow_hash_href
 
+      - name: Cypress run
+        uses: cypress-io/github-action@v4.x.x
+
       - name: Upload site artifact
         uses: actions/upload-pages-artifact@v1
         with:
-          path: "_site${{ steps.pages.outputs.base_path }}"
+          path: '_site${{ steps.pages.outputs.base_path }}'
 
   deploy:
-    name: "Deploy site"
+    name: 'Deploy site'
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
