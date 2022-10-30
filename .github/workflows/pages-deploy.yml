@@ -55,7 +55,7 @@ jobs:
           bundle exec htmlproofer _site --disable-external --check-html --allow_hash_href
 
       - name: Cypress run
-        uses: cypress-io/github-action@v4.x.x
+        uses: cypress-io/github-action@v4
 
       - name: Upload site artifact
         uses: actions/upload-pages-artifact@v1
