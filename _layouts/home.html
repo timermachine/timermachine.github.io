@@ -4,37 +4,51 @@ layout: page
 ---
 
 {% include lang.html %}
-<h2>Your Timer Library</h2>
-
 <div class="timer-app">main timer app</div>
-
-<h2 id="welcom">Welcome to Timing as you never experienced before.</h2>
-Get up and running in two minutes with our interactive  <a href="{{ base }}/guide.html">fast start guide</a>
-
-
+<div id="yt-player"></div>
+<h2 id="welcome">
+  {% include sitename.html %} - Empowers you take control of the time of your
+  life.
+</h2>
+Tour what it can do
+<a href="{{ base }}/guide.html">Here.</a> Now with interactive examples and
+videos.
 
 <h2 id="features">
-  <span class="mr-2">Features:</span
+  <span class="mr-2">Latest features</span
   ><a href="#features" class="anchor text-muted"
     ><i class="fas fa-hashtag"></i
   ></a>
 </h2>
 <ul>
-  <li>Timer can play pretty much any music for free and Ad Free!</li>
-  <li>Text to Voice alerts.</li>
-  <li>Mobile and desktop.</li>
-  <li>Timer Intervals.</li>
-  <li>Save Multiple Timers.</li>
   <li>
-    You dont have to stay on the timer browser tab for it to work (unlike ahem some others).
+    Accurate. Synchronised with Atomic clocks around the world and in space!
   </li>
+  <li>Performant. Tested with 500+ concurrent timers.</li>
+  <li>
+    Play almost any music for free (and Ad-free too!). All online, no downloads
+    necessary.
+  </li>
+  <li>...</li>
+  <li>Text to Voice alerts.</li>
+  <li>Intervals.</li>
+  <li>Chain timers together for incredible flexible control.</li>
+  <li>Schedule times of day to start timers.</li>
+  <li>...</li>
+
   <li>Overtimer (see how long since timer ended).</li>
   <li>Stopwatch: just start a timer with no time set.</li>
-  <li>Bookmark/Share timers.</li>
-  <li>Basicly this is the timer to kill all other timers.</li>
-  <li>Even more insanely powerful features a comming...</li>
+  <li>Bookmarkable / Shareable timers.</li>
+  <li>...</li>
+  <li>Life-coaches best tool.</li>
+  <li>Great to prototype Apps like HIT training.</li>
+  <li>Mobile and desktop.</li>
+  <li>
+    You dont have to stay on the timer browser tab for it to work (unlike ahem
+    some others).
+  </li>
+  <li>Even more insanely powerful features in the pipeline...</li>
 </ul>
-
 
 {{ content }} {% assign pinned = site.posts | where: "pin", "true" %} {% assign
 default = site.posts | where_exp: "item", "item.pin != true and item.hidden !=
@@ -102,7 +116,6 @@ endfor %} {% endif %}
   {% endfor %}
 </div>
 <!-- #post-list -->
-<div id="yt-player"></div>
+
 {% if paginator.total_pages > 0 %} {% include post-paginator.html %} {% endif %}
-{% include timerapp.html %}
-{% include buymeacoffee.html %}
+{% include timerapp.html %} {% include buymeacoffee.html %}
