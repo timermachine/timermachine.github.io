@@ -1,0 +1,12 @@
+---
+layout: page
+# Url shortener page layout
+---
+
+<script>
+  const part = document.location.pathname.split('/l/');
+  if (part.length > 1) {
+    const url = 'https://bit.ly/' + part[1];
+    window.open(url, '_self');
+  }
+</script>
