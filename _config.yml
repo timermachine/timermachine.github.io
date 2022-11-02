@@ -21,12 +21,12 @@ timezone:
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
 
-title: Online Timer that does it all plays music, videos, speaks,customisable, easy to use. 
+title: Online Timer that does it all plays music, videos, speaks,customisable, easy to use.
 
 tagline: Modern 2022 Online countdown Timer and stopwatch thats customisable with voice, music, youtube, alarms. For productivity, Time focus, realxation, meditation.
 
 description: >- # used by seo meta and the atom feed
-   Online new 2022 Time tools and Video player. Web and Mobile timer that plays your choice of music, speaks alerts; text to voice, intervals for meditation, productivity, training. Countdown timer, Stopwatch, Time, Clock, Pomodoro, Insight timer.
+  Online new 2022 Time tools and Video player. Web and Mobile timer that plays your choice of music, speaks alerts; text to voice, intervals for meditation, productivity, training. Countdown timer, Stopwatch, Time, Clock, Pomodoro, Insight timer.
 
 # fill in the protocol & hostname for your site, e.g., 'https://username.github.io'
 # url: 'https://timermachine.github.io' √ i think
@@ -47,11 +47,11 @@ twitter:
 social:
   # Change to your full name.
   # It will be displayed as the default author of the posts and the copyright owner in the Footer
-  name: your_full_name
-  email: example@doamin.com # change to your email address
+  name: TimerMachine
+  email: contact@timermachine.com # change to your email address
   links:
     # The first element serves as the copyright owner's link
-    - https://twitter.com/username # change to your twitter homepage
+    - https://twitter.com/timermachine # change to your twitter homepage
     - https://github.com/username # change to your github homepage
     # Uncomment below to add more social links
     # - https://www.facebook.com/username
@@ -207,6 +207,7 @@ jekyll-archives:
   permalinks:
     tag: /tags/:name/
     category: /categories/:name/
+    l: /l/:name/
 
 plugins:
   - jemoji
