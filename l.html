@@ -2,7 +2,7 @@
 
 <h1>Redirecting there...</h1>
 <script>
-  const part = document.location.search.split('?l=');
+  const part = document.location.path.split('/l/');
   console.log('urlshortener page.', part);
   if (part.length > 1) {
     const url = 'https://bit.ly/' + part[1];
