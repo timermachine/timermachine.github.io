@@ -1,13 +1,4 @@
-<!DOCTYPE html>
-
-<h1>Redirecting there...</h1>
-<script>
-  const part = document.location.path.split('/l/');
-  console.log('urlshortener page.', part);
-  if (part.length > 1) {
-    const url = 'https://bit.ly/' + part[1];
-    window.open(url, '_self');
-  }
-</script>
-
-</html>
+---
+layout: urlshortener
+# guide page
+---
