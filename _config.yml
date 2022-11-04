@@ -207,7 +207,6 @@ jekyll-archives:
   permalinks:
     tag: /tags/:name/
     category: /categories/:name/
-    l: /l/:name/
 
 plugins:
   - jemoji
