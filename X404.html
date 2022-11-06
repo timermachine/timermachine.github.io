@@ -1,0 +1,46 @@
+---
+layout: page
+title: '404: Page not found YEAH'
+
+redirect_from:
+  - /norobots/
+  - /assets/
+  - /posts/
+---
+
+<!-- put above to enable: permalink: /404.html -->
+{% include lang.html %}
+
+<h1>404 in /</h1>
+<div class="lead">
+  <!-- <p>{{site.data.locales[lang].not_found.statment }}</p> -->
+</div>
+<script>
+  //console.log('js...');
+  (async () => {
+    const part = ['noop', 'bFIK05'];
+    //console.log('v0.3 ?search -urlshortener page.', part);
+    if (part.length > 1) {
+      const surl =
+        'https://i.timermachine.com.netlify/functions/get_surl/' + part[1];
+      console.log('surl', surl);
+      let results = await fetch(surl, { method: 'GET' });
+      //console.log('V.x results', results);
+      //console.log('body', results.body); //stream -when ready todo
+      //console.log('results.json', results.json());
+      const rx = results.json().then((d) => {
+        console.log('DDDDD', d.url);
+        if (d.url) {
+          /*
+            ping it (validate it exists) - otherwise open->dont exist->404 loop
+          */
+          setTimeout(() => {
+            window.open(d.url, '_self');
+          }, 20000);
+        }
+      });
+      //console.log('rx', rx);
+      //window.open(body, '_self');
+    }
+  })();
+</script>
