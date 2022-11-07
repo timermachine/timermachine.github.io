@@ -7,10 +7,13 @@
     id="topbar"
     class="container d-flex align-items-center justify-content-between h-100 pl-3 pr-3 pl-md-4 pr-md-4"
   >
-    {% include breadcrumb.html %}
-
     <i id="sidebar-trigger" class="fas fa-bars fa-fw"></i>
+    <!-- include breadcrumb.html  -->
+    <span
+      ><a href="{{ '/' | relative_url }}">{% include sitetitle.html %}</a></span
+    >
 
+    <!-- 
     <div id="topbar-title">
       {% if page.layout == 'home' %} {{- site.data.locales[lang].title |
       default: site.title -}} {% elsif page.collection == 'tabs' or page.layout
@@ -18,7 +21,7 @@
       endcapture -%} {{- site.data.locales[lang].tabs[tab_key] | default:
       page.title -}} {% else %} {{- site.data.locales[lang].layout[page.layout]
       | default: page.layout | capitalize -}} {% endif %}
-    </div>
+    </div> -->
 
     <i id="search-trigger" class="fas fa-search fa-fw"></i>
     <span id="search-wrapper" class="align-items-center">
