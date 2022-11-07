@@ -37,16 +37,43 @@
         <span>{{ site.data.locales[lang].tabs.home | upcase }}</span>
       </a>
     </li>
+
+    <li class="nav-item{% if page.layout == 'home' %}{{ " active" }}{% endif %}">
+      <a href="{{ '/guide.html' | relative_url }}" class="nav-link">
+        <i class="fa-fw fas fa-home ml-xl-3 mr-xl-3 unloaded"></i>
+        <span>{{ 'Guide' | upcase }}</span>
+      </a>
+    </li>
+
+    <!-- Curated -->
+    <li class="nav-item{% if page.layout == 'home' %}{{ " active" }}{% endif %}">
+      <a href="{{ '/curated/contents.html' | relative_url }}" class="nav-link">
+        <i class="fa-fw fas fa-home ml-xl-3 mr-xl-3 unloaded"></i>
+        <span>{{ 'Curated' | upcase }}</span>
+      </a>
+    </li>
+
+        <!-- member -->
+        <li class="nav-item{% if page.layout == 'home' %}{{ " active" }}{% endif %}">
+          <a href="{{ '/member/login.html' | relative_url }}" class="nav-link">
+            <i class="fa-fw fas fa-home ml-xl-3 mr-xl-3 unloaded"></i>
+            <span>{{ 'Login/Register' | upcase }}</span>
+          </a>
+        </li>
+
     <!-- the real tabs -->
     {% for tab in site.tabs %}
-    <li class="nav-item{% if tab.url == page.url %}{{ " active" }}{% endif %}">
+    
+    <!-- <li class="nav-item{% if tab.url == page.url %}{{ " active" }}{% endif %}">
       <a href="{{ tab.url | relative_url }}" class="nav-link">
         <i class="fa-fw {{ tab.icon }} ml-xl-3 mr-xl-3 unloaded"></i>
         {% capture tab_name %}{{ tab.url | split: '/' }}{% endcapture %}
 
         <span>{{ site.data.locales[lang].tabs.[tab_name] | default: tab.title | upcase }}</span>
       </a>
-    </li> <!-- .nav-item -->
+    </li>  -->
+    
+    <!-- .nav-item -->
     {% endfor %}
 
   </ul> <!-- ul.nav.flex-column -->
