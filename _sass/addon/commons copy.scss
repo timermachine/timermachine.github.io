@@ -1,10 +1,6 @@
 /*
   The common styles
 */
-.testclass {
-  background-color: #d2603a;
-  color: purple;
-}
 
 html {
   @media (prefers-color-scheme: light) {
@@ -1060,29 +1056,6 @@ $sidebar-display: 'sidebar-display';
   text-overflow: ellipsis;
   word-break: keep-all;
   white-space: nowrap;
-}
-
-.msite-title {
-  color: var(--sitetitle-text-color);
-  font-size: 1.6rem;
-  letter-spacing: -1px;
-}
-.msite-title-midletter {
-  color: var(--sitetitle-r-text-color);
-  font-size: 4rem;
-  vertical-align: -1.6rem;
-  letter-spacing: -3px;
-}
-
-.msite-name {
-  color: var(--sie-name-text-color);
-  font-size: 100%;
-  letter-spacing: -1px;
-}
-.msite-name-midletter {
-  font-size: 104%;
-  vertical-align: -6%;
-  letter-spacing: -4px;
 }
 
 #core-wrapper {
