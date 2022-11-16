@@ -5,14 +5,13 @@ layout: page
 
 {% include lang.html %}
 <div class="timer-app">main timer app</div>
-<div id="yt-player"></div>
+
 <h2 id="welcome">
-  TimeRmachine - "Empowers you take control of the time of your life".
+  -Here to help make Time work for you. Not the other way round.
   <!-- <span>{% include sitetitle.html %}</span> -->
 </h2>
 Tour what it can do
-<a href="{{ base }}/guide.html">Here.</a> Now with interactive examples and
-videos.
+<a href="{{ base }}/guide.html">Here.</a> with interactive samples.
 
 <h2 id="features">
   <span class="mr-2">Why use:</span
@@ -24,31 +23,51 @@ videos.
   <li>
     Accurate. Synchronised with Atomic clocks around the world and in space!
   </li>
-  <li>Performant. Tested with 500+ concurrent timers.</li>
   <li>
-    Play almost any music for free (and Ad-free too!). All online, no downloads
-    necessary.
+    Highly Performant.
+    <a href="{{ base }}/stressdemo.html">Try it with 500+ concurrent timers.</a>
+  </li>
+  <li>
+    Play almost any music for free (and Ad-free too!).
+    <!--     
+    Seriously - save yourself hundreds of
+    <a href="{{ base }}/stressdemo.html"
+      >$$.If you use Youtube and or Spotify, Do yourself a favour and check this
+      out right now. $$</a
+    > -->
   </li>
   <li>...</li>
   <li>Text to Voice alerts.</li>
   <li>Intervals.</li>
   <li>Chain timers together for super flexible control.</li>
   <li>Schedule times of day to start timers.</li>
+  <li>
+    Kaizen Scheduling:- increase/decrease the timer duration each time you do
+    it.
+  </li>
   <li>...</li>
 
   <li>Overtimer (see how long since timer ended).</li>
   <li>Stopwatch: just start a timer with no time set.</li>
   <li>Bookmarkable / Shareable timers.</li>
   <li>...</li>
-  <li>Life-coaches best tool.</li>
-  <li>Great to prototype Apps like HIT training.</li>
-  <li>Mobile and desktop.</li>
+  <!-- <li>Life-coaches best tool.</li> -->
+  <!-- <li>Great to prototype Apps like HIT training.</li> -->
   <li>
     You dont have to stay on the timer browser tab for it to work (unlike ahem
     some others).
   </li>
-  <li>Even more insanely powerful features in the pipeline...</li>
+  <li>
+    This is just the beginning. Even more powerful features in the pipeline...
+  </li>
 </ul>
+<p>
+  Programming is easy, until you add the dimension of time! Time is perhaps the
+  most ellusive and pervasive dimension. We believe providing tools focused on
+  time as a first class domain will open up new improvements and avenues in
+  software. (while making our lives a bit easier too of course!)
+</p>
+<div id="yt-player"></div>
 
 {{ content }} {% assign pinned = site.posts | where: "pin", "true" %} {% assign
 default = site.posts | where_exp: "item", "item.pin != true and item.hidden !=

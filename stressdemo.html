@@ -1,0 +1,33 @@
+---
+layout: page
+# curated page
+---
+
+<div id="stress-demo"></div>
+
+<h2>Concurrent timers (stress test)</h2>
+So this is crazy and fun! Especially if like me you are partial to some extreme
+noise! Its good to know the app can handle pretty much anything you throw at it.
+
+<p>
+  Experiment with text to speech, video, audio alarms. Browsers (and sanity)
+  have some restrictions to what we can/want to do. For example, for audio, you
+  have to interact with the page first. This is to stop those oh so annoying
+  pages that play sounds/music as soon as you land on them. It was the bane of
+  the internet in the early days. With video, well - you only want one with
+  sound playing at a time. Period. Ever. Text to Speech is lined up for
+  improvements. The built in browser synthesis only allows one utterance at a
+  time. And its slow to generate. We have a solution, but its likely to stay in
+  the parking lot till even cooler things are done.
+</p>
+
+<p>
+  Though you are unlikely to have loads of timers go off at the same time, this
+  page is useful to get to know / try out the behaviours. For example, alarms
+  sound out once when set to the start of a timer, but loop when set to the end
+  of a timer (so we wake up innit!).
+</p>
+<p>Happy Timings - the TimeRmachine team.</p>
+<div id="yt-player"></div>
+
+{% include timerapp.html %}
