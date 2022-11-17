@@ -4,15 +4,42 @@ layout: page
 ---
 
 {% include lang.html %}
+
 <div class="timer-app">main timer app</div>
 
 <h2 id="welcome">
-  -Here to help make Time work for you. Not the other way round.
+  -Lets make Time work for us. Not the other way round.
   <!-- <span>{% include sitetitle.html %}</span> -->
 </h2>
 Tour what it can do
 <a href="{{ base }}/guide.html">Here.</a> with interactive samples.
-
+<div>Try ready made timers:</div>
+<div class="row">
+  <div
+    title="Meditation"
+    class="tolib-button"
+    notificationmessage="Meditation starts with a Gong, chimes every 5 minutes. on completion, adds one minute for next time. -Kaizen"
+    timer='t=%7B"timer"%3A%7B"name"%3A"Meditation"%2C"m"%3A"20"%2C"hasAlert"%3Atrue%2C"alert"%3A"7"%2C"hasStartAlert"%3Atrue%2C"startAlert"%3A"7"%2C"endPlayUrl"%3A"https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DfjM1-kzMs8A"%2C"hasStartPlayUrl"%3Afalse%2C"startPlayUrl"%3A""%7D%2C"interval"%3A%7B"m"%3A"5"%2C"hasAlert"%3Atrue%7D%2C"schedule"%3A%7B"hasDurationAdjustment"%3Atrue%2C"durationAdjustment"%3A"00%3A01%3A00"%2C"hasScheduleAnnounce"%3Afalse%2C"ms"%3A""%7D%7D'
+  ></div>
+  <div
+    class="tolib-button"
+    title="Get Stuff Done"
+    notificationmessage="Get S*%t Done timer added. With 54321 countdown your gonna do it! Its only 20 minutes, and if thats to long, just do a few minutes. GSD makes starting inevitable."
+    timer='t=%7B"timer"%3A%7B"name"%3A"Get%20Stuff%20Done"%2C"m"%3A"20"%2C"hasAlert"%3Atrue%2C"alert"%3A"9"%2C"hasAnnounce"%3Atrue%2C"announce"%3A"Well%20done%20getting%20stuff%20done."%2C"startAlert"%3A"8"%2C"hasStartAnnounce"%3Atrue%2C"startAnnounce"%3A"Twenty%20minutes%20getting%20stuff%20done"%2C"endPlayUrl"%3A"https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DfjM1-kzMs8A"%2C"hasStartAlert"%3Atrue%2C"hasStartPlayUrl"%3Afalse%2C"startPlayUrl"%3A""%7D%2C"schedule"%3A%7B"hasScheduleAnnounce"%3Afalse%2C"ms"%3A""%7D%7D'
+  ></div>
+  <div
+    class="tolib-button"
+    title="Super Nap"
+    notificationmessage="Super nap plays the most relaxing music ever created, and then wakes you refreshed."
+    timer='t=%7B"timer"%3A%7B"name"%3A"Super%20Nap"%2C"m"%3A"23"%2C"alert"%3A"1"%2C"hasAnnounce"%3Atrue%2C"announce"%3A"Super%20nap%20complete.%20Arise%20refreshed%2C%20reinvigorated!"%2C"startAlert"%3A"2"%2C"hasEndPlaylist"%3Atrue%2C"endPlaylist"%3A"3"%2C"hasStartPlaylist"%3Atrue%2C"startPlaylist"%3A"1"%2C"endPlayUrl"%3A"https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DfjM1-kzMs8A"%2C"hasStartPlayUrl"%3Afalse%2C"startPlayUrl"%3A""%7D%2C"schedule"%3A%7B"hasScheduleAnnounce"%3Afalse%2C"ms"%3A""%7D%7D'
+  ></div>
+  <div
+    class="tolib-button"
+    title="Youtube Timer"
+    notificationmessage="Example plays youtube link. Change it to whatever you want to play."
+    timer='t=%7B"timer"%3A%7B"name"%3A"Youtube%20Timer"%2C"s"%3A"1"%2C"alert"%3A"1"%2C"startAlert"%3A"2"%2C"hasEndPlayUrl"%3Atrue%2C"endPlayUrl"%3A"https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DXQG89cwhmJU"%7D%2C"schedule"%3A%7B"hasScheduleAnnounce"%3Afalse%2C"ms"%3A""%7D%7D'
+  ></div>
+</div>
 <h2 id="features">
   <span class="mr-2">Why use:</span
   ><a href="#features" class="anchor text-muted"
