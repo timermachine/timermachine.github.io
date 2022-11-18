@@ -1,0 +1,18 @@
+---
+layout: page
+# login layout
+---
+
+{% include lang.html %}
+
+<h2 id="members">
+  <span class="mr-2">Member Area</span>
+</h2>
+
+<div id="members"></div>
+
+{{ content | markdownify }}
+
+<div id="yt-player"></div>
+{% if paginator.total_pages > 0 %} {% include post-paginator.html %} {% endif %}
+{% include timerapp.html %}
