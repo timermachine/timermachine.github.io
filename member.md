@@ -1,8 +1,4 @@
 ---
-layout: login
+layout: member
 # login page
 ---
-
-Login page md.
-
-
