@@ -11,8 +11,11 @@ layout: page
 
 <div id="members"></div>
 
+<div id="root"></div>
+
 {{ content | markdownify }}
 
 <div id="yt-player"></div>
 {% if paginator.total_pages > 0 %} {% include post-paginator.html %} {% endif %}
-{% include timerapp.html %}
+<!--  include timerapp.html  -->
+<script defer src="/assets/js/frontendauth.js"></script>
