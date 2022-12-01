@@ -1,4 +1,24 @@
-<!-- <div id="timer-app" timer='{"timer":{"name":"i am a fucking genius today!!"}}'>
-  app
-</div> -->
-<script defer src="/assets/js/timerapp.js"></script>
+<!-- Production -->
+<script
+  defer="defer"
+  src="https://front.timermachine.com/static/app.js"
+></script>
+
+<!-- Development -->
+<!-- <script defer="defer" src="/assets/auth/timerauthapp.js"></script> -->
+
+<!-- Dev - pre timer app Jump to front! -->
+<!-- <script defer src="/assets/js/timerapp.js"></script> -->
+
+<!-- bust cache as name static (app.js) -->
+<script language="JavaScript" defer="defer">
+  ord = Math.random();
+  ord = ord * 10000000000000000000;
+  document.write(
+    '<SCR' +
+      'IPT LANGUAGE="JavaScript" SRC="https://front.timermachine.com/static/app.js;ord=' +
+      ord +
+      '?"><\/SCR' +
+      'IPT>'
+  );
+</script>
