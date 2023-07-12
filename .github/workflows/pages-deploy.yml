@@ -1,4 +1,4 @@
-name: 'Build and deploy'
+name: "Build and Deploy"
 on:
   push:
     branches:
@@ -19,12 +19,12 @@ permissions:
 
 # Allow one concurrent deployment
 concurrency:
-  group: 'pages'
+  group: "pages"
   cancel-in-progress: true
 
 jobs:
   build:
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-latest
 
     steps:
       - name: Checkout
@@ -37,18 +37,18 @@ jobs:
 
       - name: Setup Pages
         id: pages
-        uses: actions/configure-pages@v1
+        uses: actions/configure-pages@v3
 
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: 3 # reads from a '.ruby-version' or '.tools-version' file if 'ruby-version' is omitted
-          bundler-cache: false #to clear it as build failing. reset TRUE for build performance
+          ruby-version: 3   # reads from a '.ruby-version' or '.tools-version' file if 'ruby-version' is omitted
+          bundler-cache: true
 
       - name: Build site
         run: bundle exec jekyll b -d "_site${{ steps.pages.outputs.base_path }}"
         env:
-          JEKYLL_ENV: 'production'
+          JEKYLL_ENV: "production"
 
       - name: Test site
         run: |
@@ -57,10 +57,9 @@ jobs:
       - name: Upload site artifact
         uses: actions/upload-pages-artifact@v1
         with:
-          path: '_site${{ steps.pages.outputs.base_path }}'
+          path: "_site${{ steps.pages.outputs.base_path }}"
 
   deploy:
-    name: 'Deploy site'
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
@@ -69,4 +68,4 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v2.0.3
+        uses: actions/deploy-pages@v2
