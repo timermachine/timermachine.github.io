@@ -1,4 +1,154 @@
 ---
 layout: home
-# index page
 ---
+
+{% include lang.html %}
+
+<div class="timer-app"></div>
+
+<h2 id="welcome">
+    - Time working for, not against you.
+    <!-- <span>{% include sitetitle.html %}</span> -->
+</h2>
+Quick Tour - what you can do
+<a href="{{ base }}/guide.html">Here.</a> with interactive samples.
+<div>Try ready made timers:</div>
+<div class="row">
+    <div title="Meditation" class="tolib-button"
+        notificationmessage="Meditation starts with a Gong, chimes every 5 minutes. on completion, adds one minute for next time. -Kaizen"
+        timer='t=%7B"timer"%3A%7B"name"%3A"Meditation"%2C"m"%3A"20"%2C"hasAlert"%3Atrue%2C"alert"%3A"7"%2C"hasStartAlert"%3Atrue%2C"startAlert"%3A"7"%2C"endPlayUrl"%3A"https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DfjM1-kzMs8A"%2C"hasStartPlayUrl"%3Afalse%2C"startPlayUrl"%3A""%7D%2C"interval"%3A%7B"m"%3A"5"%2C"hasAlert"%3Atrue%7D%2C"schedule"%3A%7B"hasDurationAdjustment"%3Atrue%2C"durationAdjustment"%3A"00%3A01%3A00"%2C"hasScheduleAnnounce"%3Afalse%2C"ms"%3A""%7D%7D'>
+    </div>
+    <div class="tolib-button" title="Get Stuff Done"
+        notificationmessage="Get S*%t Done timer added. With 54321 countdown your gonna do it! Its only 20 minutes, and if thats to long, just do a few minutes. GSD makes starting inevitable."
+        timer='t=%7B"timer"%3A%7B"name"%3A"Get%20Stuff%20Done"%2C"m"%3A"20"%2C"hasAlert"%3Atrue%2C"alert"%3A"9"%2C"hasAnnounce"%3Atrue%2C"announce"%3A"Well%20done%20getting%20stuff%20done."%2C"startAlert"%3A"8"%2C"hasStartAnnounce"%3Atrue%2C"startAnnounce"%3A"Twenty%20minutes%20getting%20stuff%20done"%2C"endPlayUrl"%3A"https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DfjM1-kzMs8A"%2C"hasStartAlert"%3Atrue%2C"hasStartPlayUrl"%3Afalse%2C"startPlayUrl"%3A""%7D%2C"schedule"%3A%7B"hasScheduleAnnounce"%3Afalse%2C"ms"%3A""%7D%7D'>
+    </div>
+    <div class="tolib-button" title="Super Nap"
+        notificationmessage="Super nap plays the most relaxing music ever created, and then wakes you refreshed."
+        timer='t=%7B"timer"%3A%7B"name"%3A"Super%20Nap"%2C"m"%3A"23"%2C"alert"%3A"1"%2C"hasAnnounce"%3Atrue%2C"announce"%3A"Super%20nap%20complete.%20Arise%20refreshed%2C%20reinvigorated!"%2C"startAlert"%3A"2"%2C"hasEndPlaylist"%3Atrue%2C"endPlaylist"%3A"3"%2C"hasStartPlaylist"%3Atrue%2C"startPlaylist"%3A"1"%2C"endPlayUrl"%3A"https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DfjM1-kzMs8A"%2C"hasStartPlayUrl"%3Afalse%2C"startPlayUrl"%3A""%7D%2C"schedule"%3A%7B"hasScheduleAnnounce"%3Afalse%2C"ms"%3A""%7D%7D'>
+    </div>
+    <div class="tolib-button" title="Youtube Timer"
+        notificationmessage="Example plays youtube link. Change it to whatever you want to play."
+        timer='t=%7B"timer"%3A%7B"name"%3A"Youtube%20Timer"%2C"s"%3A"1"%2C"alert"%3A"1"%2C"startAlert"%3A"2"%2C"hasEndPlayUrl"%3Atrue%2C"endPlayUrl"%3A"https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DXQG89cwhmJU"%7D%2C"schedule"%3A%7B"hasScheduleAnnounce"%3Afalse%2C"ms"%3A""%7D%7D'>
+    </div>
+</div>
+<h2 id="features">
+    <span class="mr-2">Why use:</span><a href="#features" class="anchor text-muted"><i class="fas fa-hashtag"></i></a>
+</h2>
+<ul>
+    <li>
+        Accurate. Synchronised with Atomic clocks around the world and in space!
+    </li>
+    <li>
+        Highly Performant.
+        <a href="{{ base }}/stressdemo.html">Try it with 500+ concurrent timers.</a>
+    </li>
+    <li>
+        Play almost any music for free (and Ad-free too!).
+        <!--     
+    Seriously - save yourself hundreds of
+    <a href="{{ base }}/stressdemo.html"
+      >$$.If you use Youtube and or Spotify, Do yourself a favour and check this
+      out right now. $$</a
+    > -->
+    </li>
+    <li>...</li>
+    <li>Text to Voice alerts.</li>
+    <li>Intervals.</li>
+    <li>Chain timers together for super flexible control.</li>
+    <li>Schedule times of day to start timers.</li>
+    <li>
+        Kaizen Scheduling:- increase/decrease the timer duration each time you do
+        it.
+    </li>
+    <li>...</li>
+
+    <li>Overtimer (see how long since timer ended).</li>
+    <li>Stopwatch: just start a timer with no time set.</li>
+    <li>Bookmarkable / Shareable timers.</li>
+    <li>...</li>
+    <!-- <li>Life-coaches best tool.</li> -->
+    <!-- <li>Great to prototype Apps like HIT training.</li> -->
+    <li>
+        You dont have to stay on the timer browser tab for it to work (unlike ahem
+        some others).
+    </li>
+    <li>
+        This is just the beginning. Even more powerful features in the pipeline...
+    </li>
+</ul>
+<p>
+    Programming is easy, until you add the dimension of time! Time is perhaps the
+    most ellusive and pervasive dimension. We believe providing tools focused on
+    time as a first class domain will open up new improvements and avenues in
+    software. (while making our lives a bit easier too of course!)
+</p>
+<div id="yt-player"></div>
+
+{{ content }} {% assign pinned = site.posts | where: "pin", "true" %} {% assign
+default = site.posts | where_exp: "item", "item.pin != true and item.hidden !=
+true" %} {% assign posts = "" | split: "" %}
+
+<!-- Get pinned posts -->
+
+{% assign offset = paginator.page | minus: 1 | times: paginator.per_page %} {%
+assign pinned_num = pinned.size | minus: offset %} {% if pinned_num > 0 %} {%
+for i in (offset..pinned.size) limit: pinned_num %} {% assign posts = posts |
+push: pinned[i] %} {% endfor %} {% else %} {% assign pinned_num = 0 %} {% endif
+%}
+
+<!-- Get default posts -->
+
+{% assign default_beg = offset | minus: pinned.size %} {% if default_beg < 0 %} {% assign default_beg=0 %} {% endif %}
+    {% assign default_num=paginator.posts | size | minus: pinned_num %} {% assign default_end=default_beg | plus:
+    default_num | minus: 1 %} {% if default_num> 0 %} {% for i in
+    (default_beg..default_end) %} {% assign posts = posts | push: default[i] %} {%
+    endfor %} {% endif %}
+
+    <div id="post-list">
+        {% for post in posts %}
+
+        <div class="post-preview">
+            <h1>
+                <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+            </h1>
+
+            <div class="post-content">
+                <p>
+                    {% include no-linenos.html content=post.content %} {{ content |
+                    markdownify | strip_html | truncate: 200 | escape }}
+                </p>
+            </div>
+
+            <div class="post-meta text-muted d-flex">
+                <div class="mr-auto">
+                    <!-- posted date -->
+                    <i class="far fa-calendar fa-fw"></i>
+                    {% include datetime.html date=post.date %}
+
+                    <!-- categories -->
+                    {% if post.categories.size > 0 %}
+                    <i class="far fa-folder-open fa-fw"></i>
+                    <span>
+                        {% for category in post.categories %} {{ category }} {%- unless
+                        forloop.last -%},{%- endunless -%} {% endfor %}
+                    </span>
+                    {% endif %}
+                </div>
+
+                {% if post.pin %}
+                <div class="pin">
+                    <i class="fas fa-thumbtack fa-fw"></i>
+                    <span>{{ site.data.locales[lang].post.pin_prompt }}</span>
+                </div>
+                {% endif %}
+            </div>
+            <!-- .post-meta -->
+        </div>
+        <!-- .post-review -->
+
+        {% endfor %}
+    </div>
+    <!-- #post-list -->
+
+    {% if paginator.total_pages > 0 %} {% include post-paginator.html %} {% endif %}
+    {% include buymeacoffee.html %}
